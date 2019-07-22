@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_gms"
+        android:enabled="true"
+        android:title="@string/gms_jas"
+        android:icon="@drawable/ic_local_pharmacy"
+        app:showAsAction="ifRoom"
+        />
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:padding="16dp"
+    tools:context=".activity_register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_first_name"
+        android:textColor="#64B5F6"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/input_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPersonName"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_last_name"
+        android:textColor="#64B5F6"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/input_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPersonName"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_mobile_number"
+        android:textColor="#64B5F6"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/input_mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_email"
+        android:textColor="#64B5F6"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_passowrd"
+        android:textColor="#64B5F6"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPassword" />
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/input_btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_register"
+        android:background="#00B0EA"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:onClick="registerButtonClicked"/>
+</LinearLayout>

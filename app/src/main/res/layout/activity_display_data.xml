@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".activity_displayData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generic Name"
+                android:textSize="24sp"
+                android:textColor="#64B5F6"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="generic name"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bn1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Brand name"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bn2"
+                android:textSize="18sp"
+                android:text="brand name"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Category"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c2"
+                android:textSize="18sp"
+                android:text="category"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/U1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Uses"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/u2"
+                android:textSize="18sp"
+                android:text="uses"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/se1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Side Effect"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/se2"
+                android:textSize="18sp"
+                android:text="side effect"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spu1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Strip Per Unit"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spu2"
+                android:textSize="18sp"
+                android:text="strip per unit"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/s1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Storage"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/s2"
+                android:textSize="18sp"
+                android:text="storage"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/df1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Drug Form"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/df2"
+                android:textSize="18sp"
+                android:text="drug form"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1F5FE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#64B5F6"
+                android:text="Dosage"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d2"
+                android:textSize="18sp"
+                android:text="dosage"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

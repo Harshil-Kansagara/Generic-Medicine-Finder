@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hk_pc.gmf">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gmf_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gmf_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".activity_login"
+            android:label="@string/action_login"
+            android:parentActivityName=".activity_home" />
+        <activity
+            android:name=".activity_register"
+            android:label="@string/activity_register"
+            android:parentActivityName=".activity_login" />
+        <activity
+            android:name=".activity_listInfo"
+            android:label="@string/activity_information"
+            android:parentActivityName=".activity_home" />
+        <activity
+            android:name=".activity_displayData"
+            android:parentActivityName=".activity_listInfo" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity_map"
+            android:label="@string/title_activity_map"
+            android:parentActivityName=".activity_home" />
+        <activity
+            android:name=".activity_viewPlaces"
+            android:label="@string/activity_storeInforamtion"
+            android:parentActivityName=".activity_map" />
+        <activity
+            android:name=".activity_viewDirection"
+            android:label="@string/title_activity_view_direction"
+            android:parentActivityName=".activity_viewPlaces" />
+        <activity
+            android:name=".activity_pillReminder"
+            android:label="@string/pill_reminder"
+            android:parentActivityName=".activity_home" />
+        <activity
+            android:name=".activity_add"
+            android:label="@string/activity_add"
+            android:parentActivityName=".activity_pillReminder" />
+        <activity
+            android:name=".activity_alert"
+            android:label="@string/activity_alert" />
+        <activity
+            android:name=".activity_edit"
+            android:label="@string/activity_edit"
+            android:parentActivityName=".activity_pillReminder" />
+        <activity
+            android:name=".activity_pill_box"
+            android:label="@string/activity_pill_box"
+            android:parentActivityName=".activity_pillReminder" />
+        <activity
+            android:name=".activity_prescription"
+            android:label="@string/activity_prescription"
+            android:parentActivityName=".activity_home" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity_myProfile"
+            android:label="@string/action_myProfile"
+            android:parentActivityName=".activity_home"/>
+
+        <activity
+            android:name=".activity_forgetPassword"
+            android:label="Forget Password"
+            android:parentActivityName=".activity_login" />
+
+    </application>
+
+</manifest>
